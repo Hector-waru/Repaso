@@ -1,0 +1,40 @@
+/* Recordemos que la manera en la qu estan cambiadas afecta y por ello lo hacemos como siguiendo la estructura de html */
+body{
+    margin: 0;
+    padding: 0;
+}
+.Menu{
+    background-color: aqua;
+    height: 50px;
+    
+    /* centrar elemntos en bloque */
+
+    /* momentos antes iban abajo */
+}
+.Menu ul{
+    width: 800px;/* si el contenido no entra en el tamaño lo desplaza hacía abajo  */
+    margin: 0  auto;
+}
+.Menu .elemento{
+    display: inline;
+    margin: 0 20px; /* aqui lo utiliza primero arriba y abajo segundo izquierda derecha */
+    /* margin: superior derecha inferior izqduierda */
+    
+
+}
+.Menu .elemento:hover{
+    background-color: cornflowerblue;
+}
+.elemento a{/* .clase elemento  */
+    font-size: 24px;
+    color: blueviolet;
+    text-decoration: none;
+    line-height: 50px;/* centrar texto a la altura osea al height de .Menu */
+    font-family: 'Playfair Display', serif;
+    /* difuminado- color tarda en cambiar */
+    transition: color 1s;
+}
+.elemento a:hover{/* Es un evento que sucede aqui se cambia color encima y tamanaño de fuente */
+color: greenyellow;
+font-size: 30px;
+}
